@@ -16,7 +16,7 @@ ifdef S_VERSION_BUILD
 LOCAL_CFLAGS += -DS_VERSION_BUILD=$(S_VERSION_BUILD)
 endif
 
-LOCAL_CFLAGS += -I $(LOCAL_PATH)/../tf_sdk/include/
+LOCAL_CFLAGS += -fno-strict-aliasing -I $(LOCAL_PATH)/../tf_sdk/include/
 
 LOCAL_MODULE:= libtee_client_api_driver
 LOCAL_MODULE_TAGS := optional
